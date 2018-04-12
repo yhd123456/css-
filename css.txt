@@ -1,0 +1,555 @@
+!important 提升指定样式规则的应用优先权。 css1
+
+
+pointer-events: none;   鼠标点击事件无效
+
+
+$nbsp 加空格，写html上
+
+lable 标签
+
+text-decoration
+属性值	描述
+none	默认。定义标准的文本。
+underline	定义文本下的一条线。
+overline	定义文本上的一条线。
+line-through	定义穿过文本下的一条线。
+blink	定义闪烁的文本。
+inherit	规定应该从父元素继承 text-decoration 属性的值。		例如text-decoration：‘line-through’	定义穿过文本下的一条线。
+
+
+
+
+ 一个图片和一行文字在一个盒子里面怎么让他俩平行对其
+
+opacity  写透明度
+
+png格式的图片可以弄成透明的，就是图片后面的模板没啦
+
+3D：
+perspective 景深(近大远小) – 这个样式加给父级
+
+        perspective-origin 景深基点 (left center)
+
+        transform-style建立3D空间 (在自身有3D变换的同时保留子级的3D变换)
+            preserve-3d
+
+        transform 新增函数
+            rotateZ()
+            translateZ()		远大近小
+            translate3D()             详情请见课件11.15.
+
+旋转：
+      rotatey（180deg） x  y  z  
+
+写移动端：
+         单个的背景图片给background-size ： 100%； 让大的图片居中整个屏幕
+	雪碧图给：宽度，高度。@rem  除一下
+
+
+去点em的默认样式： font-style:normal;
+
+ head   头部
+
+body  身体，主题
+style样式
+list-style 列表样式
+
+
+
+背景               background
+背景颜色           background-color
+背景图片           background-image      background-size ：cover；让大的图片覆盖整个屏幕         background-size ： 100%； 让大的图片居中整个屏幕
+背景平铺           background-repeat
+不平铺             no-repeat
+横向平铺           repeat-x
+纵向平铺           repeat-y
+position  位置
+image图片
+url 在背景图片地址前面 写
+background-attachment 让背景图是否滚动
+soroll  滚动   默认值
+fixed  固定(这时候，背景图的零零点发生啦变化，背景图相对于可视区发生位移）
+size 尺寸，大小
+background-size：
+cover 等比例缩放背景图片以铺满div，
+
+
+border   边框     border-radius  圆角   写有圆角的边框    
+width    宽度
+height   高度
+
+
+top   上边    right 右边       bottom  下面    left 左边
+center 居中
+color  颜色  red红色  green  绿色 blue  蓝色
+transparent  透明
+hidden       隐藏
+solid 实线  dotted 点线  dashed 虚线
+
+
+                                       ps快捷键
+            放大  Ctrl + "+"
+            缩小  Ctrl + "-"
+            选框工具 m
+            移动工具 v
+            抓手工具 h
+            缩放工具 z
+            裁剪工具 c
+                                              文字
+
+font字体
+font-weight   文字着重（把文字变胖一点）取值范围 100-900  bold  大一点
+ font-style； 文字样式        italic   斜体    
+ font-size ； 文字大小        用像素写（px）
+font-family： 文字字体       “楷体”
+ color        文字颜色      前面不加  font
+line-height   行高  
+ 
+                                             文本
+
+text-align     文本对其方式   left right  center居中                                             居中一般给父级块元素，管里面的内联，和内联块 。  对快元素没用
+text-indent    文本缩进       新的单位  em  相对单位  大小取决于当前盒子的文字大小
+text-decoration 文本修饰     overline  上划线    underline  下划线     line-through 中划线
+letter-spacing  文字间距   （算间距的时候，不要把文字本身的留白给忘记）
+word-spacing    单词间距   （浏览器是根据空格计算单词的）
+white-space     空白区域      nowrap  强制不换行   （重要）
+
+  class 选择器    .late   尽量重复使用
+
+padding      内边距  
+margin       外边距   margin值的上下传递 margin-top  margin-bottom  上下移动的时候 都会带着他的父级一块移动   解决办法1（ 给父级加个边框）2 给父级加个overflow: hidden;；
+                      margin值叠加  
+
+margin-top负值问题
+
+               1.由内联元素转换的内联块，其margin-top负值的最小值是自身行高与父级行高差的一半。
+ 图片格式 gif png  gpj
+视图 清除参考线
+ 
+
+ 高级切图步骤
+    1，选择通道面板
+    2，分别点击红，绿，蓝三个图层，找出对比度最大的那个图层
+    3，复制对比度最大的图层
+    4，Ctrl + L 调出色阶面板
+    5, 利用色阶把需要的部分和不需要的部分差别最大化
+    6，如果需要的部分是黑色的，那么利用反相，把需要的部分变成白色（Ctrl + I）
+    7, 按住Ctrl 点击图层，选中需要的部分
+    8，点击rgb图层，再点击图层面板，选中原图层，复制选框中的内容（Ctrl + J）
+
+第五步注解：
+    如果你需要的部分是浅色的（相对不需要的部分），那么用白场吸管把需要的部分变成白色，同时把不需要的部分用黑场吸管变成黑色
+
+注：
+    填充背景颜色  Ctrl + backspace(delete)
+    填充前景颜色  Alt + backspace(delete)
+
+<header> 头部标签
+<footer> 底部标签
+<nav>    导航标签
+<section>  页面上的版块
+<article>   用来在页面上表示一块独立的内容
+<aside>    侧边栏  广告 以及其他类似有别于主要内容的标签
+<time>    表示时间
+ 
+
+a 标签
+         a标签
+        语义：链接
+        作用：链接到另外一个网站、页面、资源、发邮件，打电话
+        语法：<a></a>
+        主要属性： href 超文本引用 在href属性里面填入要链接的地址      例如：<a href="http://www.miaov.com" target="_blank">miaov</a>
+                  target 打开链接地址的方式
+                     _blank  在一个新的标签页里打开目标地址
+                     _self   在当前页面打开目标地址
+			
+    			a{
+				text-decoration：none；}  去掉下划线
+
+
+
+
+h1-h6     标题               有margin值
+p 文章段落                   有margin值
+    strong  强调（粗体）
+    em 强调(斜体）
+    span 区分样式
+    mark 标记
+
+    ul 无序列表
+     ol         有序列表  
+        li  列表项
+    dl 自定义列表
+        dt  自定义列表的标题
+        dd  自定义列表的列表项
+
+    原则： 页面上一般只能存在一个h1标签，并且一般用于包裹logo
+           小标题不能包含大标题
+
+    规定：ul,ol标签里面只能包含li标签（li里面可以包含其他的标签）
+          dl标签里面只能包含一个dt标签以及多个dd标签
+
+ display （显示） :
+            block  显示为块
+            inline 显示为内嵌
+            inline-block  显示为内联块   （重要）
+            table-cell     转换为表格 单元格
+            none     显示为空白
+    
+
+
+   vertical-align：top     顶部对齐    图片和文字   middle   中间
+
+  .text span   包含选择器     可以跨级使用
+
+
+   auto  自动
+
+让一个盒子左右居中的方法：
+                           一  把居中的元素转换为内联块，再通过设置父级的文本对其方式
+                           二  margin:0  auto    只能用于块元素 
+
+让一个盒子上下居中的方法：先把盒子转换为内联块，改变盒子的垂直对齐方式，再给父级加上一个和父级高度一样的行高
+                          先把盒子转换为内联块，改变盒子的垂直对齐方式，在父级里面加上一个高度为100%的内联块元素，并设置垂直对其方式。
+                           （
+
+多行文字居中的方法：     一 先把盒子转换成内联块，改变盒子的垂直对齐方式，再给父级加上一个和父级高度一样的行高
+
+                         二：把文字的父级转换成为表格单元格，然后再设置其垂直对齐方式
+
+
+<a>
+     伪类选择器
+      给一个元素加上一些特殊的状态
+
+      link   代表一个未访问的链接
+      visited  代表一个被访问的过后的链接
+      hover     鼠标悬停所处的那个元素
+      active     被激活  (当鼠标点击他的时候）的元素
+
+          cursor: pointer; 鼠标放上去时 变成手
+
+ 背景颜色+rgba（ 0 ，0 ，0 ， 0.6）  写半透明         rgba 的四个值可以分别设置 想得到值 用ps 吸颜色，分别看R G B 的值就好 
+
+盒模型阴影：box-shadow  五个值   一  x轴偏移量   二 y值偏移量       三  扩散大小     四 实心大小    五 颜色（rgba）       写阴影
+box-shadow:0 0 5px 0 rgba(0,0,0,0.5);		
+box-shadow:inset 这个值直接加上面; （可选） 如果有，则是内阴影，如果没有则是外阴影。
+
+
+ 文字加粗   bild
+
+ overflow  溢出：
+                hidden隐藏
+                scrol  滚动条
+                auto   自动
+                visible 可见的
+                overflow-x    x轴溢出
+                overflow-y    y轴溢出      《溢出隐藏如果有边框，边框的部位也会被隐藏》
+
+ float浮动   left
+            默认内容撑满高度
+
+         :after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+
+ BFC
+ block formatting context     块格式化上下文                  
+
+
+
+z-index   增加层级
+
+相对定位
+            position:relative
+
+            a、不影响元素本身的特性；
+            b、不使元素脱离文档流（元素移动之后原始位置会被保留）；
+            c、如果没有定位偏移量，对元素本身没有任何影响；
+            d、提升层级
+
+            ！！！注意，相对定位元素的偏移量是相对于它自身原来的位置
+
+
+绝对定位
+      position: absolute
+
+     		a、使元素完全脱离文档流；
+    		b、使内嵌支持宽高；
+    		c、块属性标签内容撑开宽度；
+    		d、如果有定位父级相对于定位父级发生偏移，没有定位父级相对于document发生偏移；
+    		e、相对定位一般都是配合绝对定位元素使用；
+    		f、提升层级
+  
+
+父级和父级浮动 影响里面的子集？怎么搞
+
+字旁边的边框 怎么和字拉开距离
+
+
+
+
+
+
+
+
+
+	table 表格
+	thead 表格头
+	tbody 表格主体
+	tr 表格行
+	th 元素定义表头
+	td 元素定义表格单元
+
+    border-collapse:collapse; 边框合并（去掉单元格之间的间距）
+    rowspan="2"  纵向合并单元格（注意删除后面多余的单元格）
+    colspan="2"  横向合并单元格 （注意删除后面多余的单元格）
+
+
+    注意事项：
+        单独改变一个单元格的尺寸的时候，会影响其他的单元格
+            改变单元格的高度会影响一整行
+            改变单元格的宽度会影响一整列
+-->
+
+
+
+
+ 表单    
+
+       表单元素新增的伪类:
+			   focus：表示表单元素被聚焦的时候
+			   checked：表示选择元素的选中状态
+			   
+
+       outline: none;让表单里面蓝色的框没有 
+
+
+        form  表单元素的父级（所有表单元素都得用form标签包起来）
+            action属性  提交数据的地址
+	placeholder 让字在框内显示
+        input 命令
+            text  文本框
+            password  密码框
+            radio 单选按钮
+            checkbox 复选框
+            submit  提交按钮                                      outline：none；让 文本框 密码框 没有框外面的颜色；
+            reset   重置按钮
+            button  自定义按钮
+            file    文件       ： （上传文件）
+            hidden  隐藏域
+
+	    email    电子邮件  ：（在手机上会表现的明显，弹出全英文键盘，在pc上和文本框差不多）
+	    tel      电话号码
+	    url      网页的地址 例如：www.baidu.com
+	    	
+
+
+        radio 单选按钮
+            要实现单选效果，就必须给一组单选按钮加上相同的name值
+            扩展按钮的可点击区域，可以使用label标签的for属性/用label标签把按钮和文字都包起来
+            所有的表单元素都可以用label标签包起来，扩大其可点击区域
+
+        name属性
+            提交数据的时候必须的值
+
+        value属性
+            用户输入的信息
+
+        checked属性
+            表示选择元素的选中状态
+
+         disabled属性
+            表示元素被禁用
+
+
+	:focus
+            表示表单元素被聚焦的时候
+
+
+
+        固定格式
+            select里面只能包含option标签
+
+        checked
+        disabled
+        selected 属性
+            指定下拉菜单默认选中的选项
+
+        尽量不要试图去改变select标签的外观(下拉小三角)，如果项目有需求，用其他的标签模拟下拉菜单，用js写下拉菜单的功能
+
+        textarea  文本域
+            各个浏览器下的默认滚动条显示不兼容
+            css3新增resize属性
+                horizontal  只可以改变水平方向的尺寸
+                vertical    只可以改变垂直方向的尺寸
+                both        水平垂直方向都可以改变尺寸
+                none        不可以改变尺寸
+            IE系列浏览器全部都不可以动态的改变文本域的尺寸
+
+        一些其他的属性
+        autofocus    自动聚焦 （IE系列有BUG）
+        cols         规定文本域能输入一行字符的个数
+        rows         规定文本域能显示的行数（当输入多行的时候，出现滚动条）
+        maxlength    规定文本域能输入的最多字符
+        placeholder  提示信息
+
+
+
+一般，文本框的高度不要给太高（20~30），以防某些浏览器光标偏上的问题
+
+  
+
+	结构性伪类：（里面只能是相同的元素，单一的元素）
+        	E:nth-child(n)  表示E父元素中的第n个子元素,且类型必须为E
+       	 	p:nth-child(odd){background:red}/*匹配奇数行*/
+        	p:nth-child(even){background:red}/*匹配偶数行*/
+        	p:nth-child(2n){background:red
+		li:nth-last-child(odd) 表示E父元素中的第n个字节点，从后向前计算}
+		
+
+		E:nth-of-type(n)         表示E父元素中的第n个类型为E的子节点                         （里面可以有多个元素，例如：p h1  h2）
+        	
+        	E:nth-last-of-type(n)	表示E父元素中的第n个类型为E的子节点 从后向前计算 
+        	
+
+		E:first-child 表示E父元素中的第一个子节点，并且这个子节点必须是E
+        	E:last-child 表示E父元素中的最后一个子节点并且这个子节点必须是E
+
+
+		E:first-of-type 表示E父元素中的第一个E元素
+            	E:last-of-type 表示E父元素中的最后一个E元素
+
+		E:only-child表示E元素中只有一个子节点,并且类型必须是E。注意：子节点不包含文本节点
+		E:only-of-type 表示E的父元素中只有一个子节点，且这个唯一的子节点的类型必须是E。注意：子节点不包含文本节点
+
+		E:first-child 表示E父元素中的第一个子节点，并且这个子节点必须是E
+        	E:last-child 表示E父元素中的最后一个子节点并且这个子节点必须是E
+
+transition：1s； 过渡一秒钟
+transition-duration：3s； 运动的延迟
+transition-duration：1s； 运动的时间
+transition-property：all；运动的样式   
+opacity：0；完全透明  opacity：1；显示出来， 分别给值 可以做过渡
+
+transform	  基类
+        
+                rotate(90deg)  旋转函数 取值度数
+                    deg  度数
+                    Transform-origin:x y 旋转的基点
+                skew(90deg) 倾斜函数 取值度数
+                    skewX()
+                    skewY()
+                scale(2) 缩放函数 取值 正数、负数和小数
+                    scaleX()
+                    scaleY()
+                translate() 位移函数
+                    translateX()
+                    translateY()
+		    translateZ()
+            	    translate3D()
+
+
+
+
+ <!--
+----第一步，要设置关键帧-------------------------------------------------
+        关键帧——keyFrames
+            类似于flash
+            只需指明两个状态，之间的过程由计算机自动计算
+            关键帧的时间单位
+            数字：0%、25%、100%等
+            字符：from(0%)、to(100%)
+            格式
+            @keyframes 动画名称
+            {
+                0%{
+                    top:0;
+                    left:0;
+                }
+                100%{
+                    height:100px;
+                    top:200px;
+                }
+            }
+
+        格式(2)
+            @keyframes  miaov_test
+            {
+                from { background:red; }
+                to { background:green; }
+            }
+            可以只有to
+
+----第二步，调用关键帧 ---------------------------------------------------
+            通过animation这个样式调用关键帧，达到动画的效果
+            必要属性
+            animation-name		动画名称（关键帧名称）
+            animation-duration		动画持续时间
+            例如：
+            -webkit-animation-name: ‘miaov';
+            -webkit-animation-duration: 4s;
+                -webkit-可加可不加
+
+
+-----------可选的动画状态-----------------------------------------------------
+            animation-play-state 播放状态（ running 播放 和paused 暂停 ）
+            animation-timing-function	动画运动形式
+                linear	匀速。
+                ease		缓冲。
+                ease-in	由慢到快。
+                ease-out	由快到慢。
+                ease-in-out	由慢到快再到慢。
+                cubic-bezier(number, number, number, number)：	特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内
+                http://cubic-bezier.com
+
+            animation-delay			动画延迟
+                只是第一次
+            animation-iteration-count		重复次数
+                infinite为无限次
+            animation-direction			播放前重置
+                动画是否重置后再开始播放
+                alternate	动画直接从上一次停止的位置开始执行
+                normal	动画第二次直接跳到0%的状态开始执行
+
+        animation-fill-mode?
+            设置动画时间之外的状态
+
+            none 		不设置动画之外的状态
+            forwards	动画最后一帧的状态(当动画播放完成之后，保持最后一帧的状态)
+            backwards	动画开始时的状态（当动画开始之前，先运行第一帧的状态）
+                注：
+                    当动画有延时的时候，默认是先延时，然后再从第一帧开始执行动画，如果设置了这一条属性，那么在动画开始之前就会运行第一帧的状态，然后，延时，然后播放动画
+            both		动画结束或开始的状态
+    -->
+
+例子：
+       .box{
+				width: 200px;
+				height: 200px;
+				background-color:#000000;
+				border:10px solid #00a8ff;
+				animation-duration:3s;
+				animation-name:move;
+				animation-fill-mode:both;
+				position: absolute;
+				margin-left:300px;
+				margin-top: 500px;
+			}
+			@keyframes move {
+            0%{
+                top:0;
+                left:0;
+            }
+            25%{
+                left:300px;
+            }
+            100%{
+                bottom: 200px;
+            }
+        }
+		</style>
