@@ -1,0 +1,594 @@
+for（）{
+	四个阶段，1.先定义，2.判断，3.进循环，4.自增或自减
+}
+
+
+
+
+
+在实际开发中，我们有时需要知道对象的所有属性，原生js给我们提供了一个很好的方法：Object.keys()，该方法返回一个数组（写对象）
+
+
+onerror 	事件会在文档或图像加载过程中发生错误时被触发。
+		在装载文档或图像的过程中如果发生了错误，就会调用该事件句柄。
+
+
+创建一个Image对象：var a=new Image();    定义Image对象的src: a.src=”xxx.gif”;    这样做就相当于给浏览器缓存了一张图片
+
+<script>
+	let a = 10;
+</script>
+<script>
+	let b = 20;
+	alert(a) // 弹10  
+</script>
+
+
+<script>
+	let a = 10;
+	alert(b) // 报错  
+</script>
+<script>
+	let b = 20;
+</script>
+
+
+
+
+typeof  查看数据类型，查看出来的都是小写字母
+
+自定义滚动条0-1之间的比例
+
+	拖拽top  / 目标位置  = 0-1
+
+
+
+获取时间：
+		var oDate = new Date(); //实例一个时间对象；
+		oDate.getFullYear();   //获取系统的年；
+		oDate.getMonth()+1;   //获取系统月份，由于月份是从0开始计算，所以要加1
+		oDate.getDate(); // 获取系统日，
+		oDate.getHours(); //获取系统时，
+		oDate.getMinutes(); //分
+		oDate.getSeconds(); //秒
+
+for in    （用于数组或者对象的属性进行循环操作）in不但能够遍历当前对象上的属性，还能遍历原型上的属性
+
+		for（let attr in data）{
+			
+			}
+		attr 是key值
+		data[attr]是val值
+	
+
+
+
+
+ES5
+            dataset 给行间添加属性的方式
+
+		box.dataset.index = 1;     就是往box里面添加一个名为index=1 的属性
+
+
+ele.getBoundingClientRect()
+            获取指定元素的细节信息 
+            返回值:{}
+            left,top,right,bottom 绝对位置（当前位置到底边的距离）
+
+
+
+delay() 方法对队列中的下一项的执行设置延迟。
+
+animate() 方法执行 CSS 属性集的自定义动画。
+该方法通过CSS样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。
+只有数字值可创建动画（比如 "margin:30px"）。字符串值无法创建动画（比如 "background-color:red"）。
+注释：使用 "+=" 或 "-=" 来创建相对动画（relative animations）。	
+
+	  
+		
+滚动条的比例	let t = ev.pageY - disY;	ev.pageY 移动事件Y的坐标，disY  点击事件Y 的坐标
+	  	let scale = t /  (div1.clientHeight - div2.clientHeight);	div1是页面的高度，div2滚动条的高度
+
+
+innerheight、innerwidth 
+只读属性，声明了窗口的文档显示区的高度和宽度，以像素计。
+这里的宽度和高度不包括菜单栏、工具栏以及滚动条等的高度。
+
+
+
+事件:
+            	onclick			点击事件
+            	onmouseover		移入事件
+           	onmouseout		移出事件
+            	onmouseenter		事件在鼠标指针移入到元素上时触发	类似于onmouseover ,唯一的区别是这个不支持冒泡
+            	onmouseleave		事件在鼠标指针移出到元素上时触发	这两个适用于两个div叠加在一起，用这个好使
+            	onmousedown		事件绑定
+            	onmouseup		事件解绑
+            	onrezie			当窗口缩放时触发这个事件
+            	onscroll		当滚动条滚动的时候触发这个事件	
+            	onhashchange		当一个窗口的哈希改变时就会触发这个事件
+            	onpopstate 		浏览器点击后退触发时触发这个事件
+		onkeydown		键盘按下
+		onkeyup			键盘抬起
+		oncontextmenu：		弹出右键菜单
+
+		remove（)删除节点  删除谁把谁写在前面   div.remove()  删除div	Google 用的
+
+
+getBoundingClientRect用于获取某个元素相对于视窗的位置集合。集合中有top, right, bottom, left等属性。
+
+
+offsetWidth 是对象的可见宽度，包滚动条等边线，会随窗口的显示大小改变
+offsetHeight 是对象的可见高度，包滚动条等边线，会随窗口的显示大小改变
+
+        
+
+事件捕获
+	当你使用事件捕获时，父级元素先触发，子级元素后触发，即div先触发，p后触发。
+
+事件冒泡
+
+	当你使用事件冒泡时，子级元素先触发，父级元素后触发，即p先触发，div后触发。
+		
+
+
+ number（数字），
+
+
+删除
+	obj.classList.contains('className'):
+		返回布尔值，判断指定的类名是否存在。
+
+
+
+
+
+onload					页面加载完执行的事件
+script                             	标签是专门用来解析js代码
+
+document.getElementById('id')      	通过id的方式去获取元素。
+function (){} 				函数 (实现什么目的的代码都放在函数内)
+alert()  				系统内部的弹框
+onclick				   	点击事件
+onmouseover        		   	鼠标移入事件
+onmouseout   				鼠标移出事件
+var let 				变量  （如果使用let，那么同名的变量不能重复！！！）
+const					不可变的量
+alert                                   浏览器弹框
+if                			如果
+else					否则
+innerHTML                               所有内容（更改所有内容）
+csstext					文本内容 
+element					元素
+element.classlist.add("b1");
+
+classList.add('red')			添加一个class元素（要在样式表里写red的样式）
+classList.remove（‘red’）		减少一个class元素？？？
+
+classlist.toggle() 方法切换元素的可见状态。
+如果被选元素可见，则隐藏这些元素，如果被选元素隐藏，则显示这些元素。
+
+document.getElementsByClassName		获取所有的class		//获取的是一个数组
+querySelector(.选择class的时候在里面加.) 用css选择器去获取一个元素					
+document.querySelectorAll() 		用css选择器去获取*一组*元素        
+document.getElementsByTagName		获取元素组    (这个有啥特殊性)（好像是可以直接引用li，不用写id名）
+continue  				跳过
+break  					跳出  不在循环了	
+default              			默认的	
+isNaN                                   不是数字
+
+setInterval				间隔型定时器（一直炸）
+clearInterval				关闭定时器     
+
+   					
+setTimeout				延迟型定时器（只炸一次）
+clearTimeout				要关闭的定时器  	
+
+new Date（）；				时间对象（获取到当前本机的时间，这个时间是可以任意修改的）	
+
+arguments : 				实参的集合（类数组）
+
+console.log(getComputedStyle(div).height)		获取计算后的样式。	
+
+parseInt                             比number多啦一个取整的功能
+parseFloat				比上面的比可以转小数；
+
+offsetLeft:			定位元素的外边框的左距离到定位父级的内边框的左距离
+
+
+ 三元运算符（三目运算符）：
+            ? :
+            非它即它
+            let a = 0 < 1 ? '呵呵' : '嘻嘻';
+
+
+
+js提供了Math对象下的多个数学方法
+
+        Math.ceil()  向上取整
+
+        Math.floor()  向下取整
+
+        Matrh.abs()  取绝对值。
+
+        Math.max();  最大
+        Math.min();  最小
+
+        找到数组中最大的值：
+            Math.max.apply(null,arr);
+
+   Math.random();
+            随机 0 - 1之间的无限不循环小数
+
+        常用的取整公式
+			x ~ y : Math.round(Math.random()*(y-x) + x)
+			0 ~ x : Math.round(Math.random()*x)
+			1 ~ x : Math.ceil(Math.random()*x)||1
+			0 ~ x-1 : Math.floor(Math.random()*x) 
+
+
+				字符串拼接
+
+string.charCodeAt(index);
+            可以把指定的字符转成unicode编码值。
+
+        第一种写法:
+            'm'.charCodeAt();  109
+        第二种写法:
+            'miaov'.charCodeAt(0)  109
+            'miaov'.charCodeAt(1)  105
+
+
+string.indexOf(指定字符,起始的位置);
+            从左往右  找到指定位置的下标(返回值)
+
+        *** 如果找不到就返回 -1
+
+            如果说某个字符串中有这个值，那么就可以这些写
+                if(string.indexOf('') != -1){}
+
+        设置本身的位置只能找到本身。如果要往后找，那么要在本身后 + num
+
+
+
+DOM
+
+	DOM
+      文档对象模型(Document object  Model)
+
+      children -> 某个元素下的元素孩儿们	  元素子节点
+
+      childNodes -> 所有的孩子们   所有的子节点（包含文本，注释）
+
+      parentNode -> 老爹	   找父级
+
+      nodeType：
+        8  注释
+        1  元素
+        9  document
+        3  文本
+        2  属性  attributes[0]
+
+
+	 最后一个子节点   parent.lastElementChild:
+
+	 第一个子节点     parent.firstElementChild:
+
+	 上个兄弟节点     previousElementSibling
+		
+	下一个兄弟节点：	 nextElementSibling
+
+	操作行间的属性
+            获取属性：
+                box.getAttribute(属性名)
+            设置属性:
+                box.setAttribute(属性名,属性值)
+            删除属性:
+                box.removeAttribute(属性名)
+
+		ES5
+            dataset 给行间添加属性的方式
+          
+	创建元素:
+            document.createElement(标签名)
+
+        在末位追加元素:
+            parent.appendChild(childNodes[0])            
+			
+            parent.insertBefore(添加谁,往谁前面添加)            
+
+        删除
+            parent.removeChild(删除的那个)
+
+            高版本浏览器自带    
+                element.remove();
+        替换
+            replaceChild()
+
+        DOM的操作都是剪切，不是复制  
+
+	动态数组
+            getElementsByTagName()
+            children
+            className
+
+        静态：
+            querySelectorAll
+
+	replaceChild();替换
+
+        parent.replaceChild(newnode,oldnode);
+
+	克隆
+            cloneNode(true);
+                true:还可以克隆子节点
+                
+                insertBefore
+                
+                方法在您指定的已有子节点之前插入新的子节点
+
+	offsetParent:
+            定位父级是谁
+
+            默认定位父级为body
+
+            只要祖先级有定位那么，子级的定位父级为这个加了定位的元素
+
+            建议：
+                子级加定位父级也加定位。
+
+	offsetLeft: 
+            从子级的左外边框到定位父级的左内边框的距离
+            number类型
+
+        offsetTop：
+            从子级的上外边框到定位父级的上内边框的距离
+            number类型
+
+        正常使用它
+            1.子级要有定位，定位父级也要有定位
+            2.子级和定位父级必须要触发haslayout(加宽高、zoom...)
+            3.清除默认样式  
+
+
+	document.documentElement.clientWidth(可视区的宽度)
+
+        document.documentElement.clientHeight(可视区的高度)
+
+元素的宽高：	
+	obj.clientWidth  width + padding
+
+       	obj.offsetWidth  width + padding + border
+
+	obj.scrollHeight  被内容撑开的高度
+
+
+	tab.tBodies[0]	一个table可以有很多tBody,获取到的是一个集合
+
+        tab.rows[1]	（一行,获取tr的） 也是一个集合，也是支持下标
+
+        tab.cells[0]	(一个单元格,获取td)
+
+        deleteRow(index)	删除单元格
+            
+BOM:
+	window
+            通过window提供的api赋予开发者操作浏览器的能力。
+            基本上是不兼容的。
+
+        window.open(url,打开的方式,可以设置浏览器窗口)
+            第三个参数支持:
+                width=420,height=230,resizable=yes,scrollbars=yes
+
+            在Chrome中必须是在用户主动触发的情况下才会有用，不然会被拦截。
+
+            IE下是不会拦截的。
+
+	文本输入流:
+            
+            新窗口如果使用了document.write，那么等同于
+            开了个水龙头，开着一直不关闭就容易出错，一般的		12.27课件
+            症状就是js代码不执行
+
+            解决:
+                使用close()
+
+关闭窗口:
+            close()
+
+        在使用该方法的时候，IE会弹出一个提示框
+        Chrome直接关闭
+
+window.navigator.userAgent
+            浏览器用户信息
+            字符串
+        IE10及以下都是MSIE xx
+
+        注意:
+            这个信息容易被修改,只能做参考，不能100%肯定
+
+ 地址栏信息
+            window.location.href
+        
+        查询信息:
+            window.location.search
+            ?到#号之间的信息
+        锚信息:
+            #及之后信息
+
+        *** onhashchange事件:
+            可以监听hash值的变化,只要hash值改变就会触发这个事件
+
+        ***改变hash值，页面是不会跳转的。
+
+        ***改变search值，页面是会跳转的。
+
+可视区的宽度：
+            document.documentElement.clientWidth
+
+            window.innerWidth（可视区宽度 ）
+                不计算滚动条的。
+
+        可视区的高度:
+            document.documentElement.clientWidth
+
+            window.innerHeight（可视区高度）
+                不计算滚动条的。		速度快
+
+
+上滚动距离
+            document.documentElement.scrollTop
+            window.pageYOffset
+
+        左滚动距离:
+            document.documentElement.scrollLeft
+            window.pageXOffset
+
+ onscroll
+            当滚动条滚动的时候触发这个事件
+
+onresize:
+            窗口缩放的时候触发
+
+document.documentElement.scrollTop 能读能写;
+        window.pageYOffset只能读不能写
+
+
+        scrollTo(x,y)
+
+	
+历史记录
+	history
+	必须要在服务器下运行
+
+	history.pushState（数据，''，url）添加历史记录		12.28课件
+	history.replaceState()替换当前的历史记录
+	
+	onpopstate 取数据
+
+	
+
+事件：
+	onclick		点击事件
+	onmouseover	移入事件			
+	onmouseout	移出事件
+	onmousemove	移动事件
+
+事件绑定
+	obj.addEventListener(’不带on的事件名‘，事件函数，false)	不管有没有写true		第三个参数可以为一个对象
+解绑									移动端必用
+	obj.removeEventListener(要解绑的事件名，要解除的函数名，)
+
+	注意： 解绑函数必须是有名函数，匿名函数解绑不了
+
+	once：		{once：true}
+		只触发一次，调用完就解除绑定啦   用在事件套事件里面， 详情见课件1.2号
+						
+
+Event:事件对象：
+		当用户触发某个事件的时候，记录下用户操作的一些细节的信息
+
+			1.事件函数的第一个参数，一定是事件对象。
+        		2.在IE和chrome中 全局有个event属性，就是事件对象
+
+	
+	事件函数的第一个参数，一定是事件对象
+	在IE和chrome中 全局有个event属性，就是事件对象
+	clientX  x轴坐标	clientY  y轴坐标（鼠标到可视区的距离，不包含滚动条的）	
+
+	***pageX/pageY  坐标	（鼠标到顶部的距离，包含滚动条的）
+
+****	ev.target：   可以通过触发父级事件直接找到触发这个事件的子级是谁     tagName===‘LI'
+
+		ev.target.tagName==='LI';		
+
+		tagName 属性返回元素的标签名	在 HTML 中，tagName 属性的返回值始终是大写的。
+
+		
+
+事件流（事件模型）
+	1.捕获阶段：
+		从（window）上往下到目标点的阶段
+
+	2.目标  事件触发的点
+	
+	3.冒泡
+		从（目标点）下往上到（window）的阶段		ev.cancelBubb=true  取消冒泡(不是标准，但是浏览器都支持)
+								ev.stopPropagation();是标准但是低版本浏览器不支持
+
+								在目标点上取消，不让父级触发 
+
+	问题：当目标点绑定的事件函数，祖先级元素野绑定了同样的事件函数，在触发目标事件的时候通过冒泡也会调用祖先级的事件函数	
+                            
+
+	传统的事件是没有捕获的，只有冒泡				
+	
+	
+焦点事件：
+		onfocus:
+            		聚焦		
+        	onblur:
+            		失焦：		在一个文本框输入内容，改变他内容的时候用这个
+			
+		
+
+
+
+键盘事件：
+	onkeydown	键盘按下
+	onkeyup		键盘抬起
+	onkeypress	事件会在键盘按键被按下并释放一个键时发生。（用不多）
+
+	ev.keyCode	获取到键值
+
+	ondblclick      鼠标双击
+				
+
+	
+浏览器默认行为：(1.2号课件)
+		你不想触发某个行为，浏览器偷偷的帮你触发啦
+
+		传统的事件绑定阻止默认行为：
+			return false
+		事件绑定阻止默认行为
+			ev.preventDefault();
+		
+		清除事件 写null 课件1.3
+
+oncontextmenu:
+		弹出右键菜单		在oncontextmenu函数里面写return false  可以让浏览器默认的右键菜单不弹出来
+
+onsonscroll	滚动事件	(只有滚动条的情况下才触发)
+
+	onmousewheel	IE和chrome下	这个就是没有滚动条也可以触发
+		ev.wheelDelta
+			上：180  正数	因为上滚是正数，下滚是负数，所以可以做个判读，判断是上滚，还是下滚
+			下：-180 负数
+
+			火狐下
+		ev.detail
+                	上: -3   负数
+                	下: 3    正数
+
+
+
+focus();
+	自动聚焦，比如文本框，打开网页text输入框可以直接输入，就用这个
+
+select：选中文本，也可以拿来聚焦
+
+oninput:
+	文本内容发生变化的时候触发
+
+
+onmousedown		事件会在鼠标按下的时候发生
+onmousemove		事件会在鼠标指针移动时发生。
+onmouseup		事件会在鼠标松开的时候发生
+
+	
+
+	
+            
+            				
+	
+	
