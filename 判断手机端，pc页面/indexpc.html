@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000000;
+			margin: 0 auto;
+			line-height: 200px;
+			font-size: 20px;
+			text-align: center;
+		}
+	</style>
+	<body>
+		<div class="box">
+			pc
+		</div>
+		<script type="application/javascript">
+		    var PC = IsPC();
+		    if (!PC) {
+		        location.href = "index_m.html";
+		    }
+//		    if(PC) {
+//		    	location.href = "indexpc.html"
+//		    }
+//在pc只写如果不是pc就进去手机端，反之手机端只写不是手机端就进去pc
+		
+		    function IsPC() {
+		        var userAgentInfo = navigator.userAgent;
+		        var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+		        var flag = true;
+		        for (var v = 0; v < Agents.length; v++) {
+		            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+		                flag = false;
+		                break;
+		            }
+		        }
+		        return flag;
+		    }
+
+</script>
+	</body>
+</html>

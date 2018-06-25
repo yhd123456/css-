@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		.box{
+			width:100px;
+			height: 100px;
+			border: 1px solid #000000;
+			font-size: 20px;
+			line-height:100px;
+			margin: 0 auto;
+			text-align: center;
+		}
+	</style>
+	<body>
+		<div class="box">
+			
+			手机端
+			
+		</div>
+		
+		<script type="application/javascript">
+		    var PC = IsPC();
+//		    if (!PC) {
+//		        location.href = "index_m.html";
+//		    }
+		    if(PC) {
+		    	location.href = "indexpc.html"
+		    }
+		
+		    function IsPC() {
+		        var userAgentInfo = navigator.userAgent;
+		        var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+		        var flag = true;
+		        for (var v = 0; v < Agents.length; v++) {
+		            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+		                flag = false;
+		                break;
+		            }
+		        }
+		        return flag;
+		    }
+
+</script>
+		
+	</body>
+</html>
